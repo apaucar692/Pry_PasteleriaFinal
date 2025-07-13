@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  background-color: #ebe1d7;
+  color: #111;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.busqueda-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff7f0;
+  border: 2px solid #d7baa5;
+  border-radius: 8px;
+  padding: 5px 10px;
+
+}
+
+.busqueda-input {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 14px;
+  width: 160px;
+  background-color: transparent;
+}
+
+.busqueda-form button {
+  background: none;
+  border: none;
+  color: #6b3e26;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.busqueda-form button:hover {
+  color: #93563b;
+}
+section{
+    padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #d7baa5;
+  margin: 0;
+  padding: 30px 20px;
+  margin-bottom: 0;
+   
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  
+}
+
+.logo {
+  
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #6b3e26;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #93563b;
+}
+.nav i {
+  font-size: 1.2rem;
+  margin-left: 15px;
+  color: #b77d46;
+}
+
+.nav i:hover {
+  color: #a0522d;
+}
+
+ .navbar-brand img {
+      height: 50px;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    .gift-card {
+    background-color: #fffaf5;
+    border: 1px solid #e5d4c0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 1rem;
+    font-family: 'Playfair Display', serif;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+    .gift-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .gift-img {
+      border-radius: 10px;
+      object-fit: cover;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .gift-card h5 {
+  color: #6e3d2f;
+}
+.agregar-carrito {
+  border-color: #b38c6d;
+  color: #b38c6d;
+}
+.agregar-carrito:hover {
+  background-color: #b38c6d;
+  color: rgb(254, 254, 254);
+}
+
+
+
+footer {
+  background-color: #d7baa5;
+  color: white;
+  padding:3rem 1rem 2rem 1 rem;
+  padding: 2rem;
+}
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-grid >div {
+  flex: 1 1 200px;
+}
+.footer-grid h4{
+    font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+   color: #ba6113;
+}
+.footer-grid a {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+.footer-grid div:nth-child(3) a {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-grid div:nth-child(3) a:hover {
+  color: #b28354;
+  text-decoration: underline;
+}
+
+.footer-grid img.logo {
+  height: 100px;
+  border-radius: 8px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.social img:hover {
+  transform: scale(1.1);
+}
+
+.comment {
+  text-align: center;
+  color: rgb(212, 131, 25);
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #fff5e0;
+  padding-top: 1rem;
+  font-weight: bold;
+}

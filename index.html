@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Mora</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+</head>
+<body>
+  <header>
+    
+    <div class="container header-content">
+      <img src="image/la-mora-1.jpg" alt="Logo La Mora" class="logo" />
+      <nav class="nav">
+        <div class ="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="https://delivery.lamorapasteleria.com/">Delivery</a>
+        <a href="regalos.html">Regalos</a>
+        <a href="index.html#sucursales">Sucursales</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html"><id="carrito-link" class="position-relative"> <i class="fas fa-shopping-cart"></i>
+        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        0
+        </span></a>
+        </div>
+        <form class="busqueda-form" action="buscar.html" method="get">
+       <input type="text" placeholder="Buscar productos..." name="q" class="busqueda-input">
+       <button type="submit"><i class="fas fa-search"></i></button>
+       </form>
+      </nav> 
+    </div>
+  </header>
+  
+  <section class="slider">
+    <div class ="slides">
+    <img src="image/logo1.png" alt="Imagen 1">
+    <img src="image/logo2.jpeg" alt="Imagen 2">
+    <img src="image/logo3.jpeg" alt="Imagen 3">
+    <img src="image/logo4.jpg" alt="Imagen 4">
+    </div>
+    <div class="slider-text">
+      <h1>La Mora</h1>
+      <p>“Tradición y sabor desde 1996”</p>
+      <a href="nosotros.html" class="slider-descubre-btn">Descubre más</a>
+    </div>
+  </section>
+
+  <section class="container favoritos">
+    <h2>Nuestros Favoritos</h2>
+    <div class="grid productos">
+      <div class="producto-item">
+        <img src="image/producto1.jpg" alt="Producto 1" />
+        <p>Mini Amor Eterno de Chocolate</p>
+        <button class="agregar-carrito"  
+         data-nombre="Mini Amor Eterno de Chocolate"
+         data-precio="35.00"
+         data-imagen="image/producto1.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/producto2.webp" alt="Producto 2" />
+        <p>Box Macarrones x4</p> 
+        <button class="agregar-carrito"
+         data-nombre="Box Macarrones"
+         data-precio="40.00"
+         data-imagen="image/producto2.webp" >Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/producto3.jpg" alt="Producto 3" />
+        <p>Pie de Limón para Papá</p>
+        <button class="agregar-carrito"
+         data-nombre="Pie de Limón para Papá"
+         data-precio="55.00"
+         data-imagen="image/producto3.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/producto4.jpg" alt="Producto 4" />
+        <p>Kasekuchen con Amor</p> <br>
+        <button class="agregar-carrito"
+         data-nombre="Kasekuchen con Amor"
+         data-precio="48.00"
+         data-imagen="image/producto4.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/producto5.jpg" alt="Producto 4" />
+        <p>Amor Eterno de Chocolate + Mora Box</p> 
+        <button class="agregar-carrito"
+         data-nombre="Amor Eterno de Chocolate + Mora Box"
+         data-precio="65.00"
+         data-imagen="image/producto5.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/producto6.webp" alt="Producto 4" />
+        <p>Petit Dad Cake</p> <br>
+        <button class="agregar-carrito"
+         data-nombre="Petit Dad Cake"
+         data-precio="55.00"
+         data-imagen="image/producto6.webp">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/viva_el_peru.jpg" alt="Producto 4" />
+        <p>Petit ¡Viva el Perú!</p> <br>
+        <button class="agregar-carrito"
+         data-nombre="Petit ¡Viva el Perú!"
+         data-precio="42.00"
+         data-imagen="image/viva_el_peru.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="image/turron.jpg" alt="Producto 4" />
+        <p>Turrón especial de 2 pisos</p> <br>
+        <button class="agregar-carrito"
+         data-nombre="Turrón especial de 2 pisos"
+         data-precio="38.00"
+         data-imagen="image/turron.jpg">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+<section class="categorias">
+  <div class="container">
+    <h2>Explora por Categoría</h2>
+    <div class="grid">
+      <a href="productos.html?categoria=dulce" class="item">
+        <img src="image/dulce.webp" alt="dulce" />
+        <p>Dulces</p>
+      </a>
+      <a href="productos.html?categoria=salado" class="item">
+        <img src="image/salados.jpg" alt="salado" />
+        <p>Salados</p>
+      </a>
+      <a href="productos.html?categoria=panes" class="item">
+        <img src="image/panes.jpg" alt="panes" />
+        <p>Panes</p>
+      </a>
+      <a href="productos.html?categoria=bocaditos" class="item">
+        <img src="image/bocaditos.webp" alt="Carta" />
+        <p>Carta</p>
+      </a>
+      <a href="productos.html?categoria=regalos" class="item">
+        <img src="image/regalos.jpg" alt="regalo" />
+        <p>Regalos</p>
+      </a>
+    </div>
+  </div>
+</section>
+  
+  <section class="container historia">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/tv6cbVM_1T4" 
+    frameborder="0" allowfullscreen></iframe>
+    <div>
+      <h2>Nuestra Historia</h2>
+      <p>En La Mora, creamos productos exquisitos con ingredientes finos y método casero tradicional.</p>
+      <p>Desde 2008, mi hija Pía ha aportado ideas frescas de Europa, manteniendo viva nuestra tradición familiar.</p>
+      <p>Ofrecemos desde bocaditos gourmet hasta lasañas y mermeladas, siempre con altos estándares de calidad.</p>
+    </div>
+  </section>
+
+  <section class="sucursales" id="sucursales">
+  <div class="container">
+    <h2>Visítanos en nuestras sucursales</h2>
+    
+    <div class="sucursales-content">
+      <div class="sucursal-info">
+        <p style = "font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Miraflores:</strong> Calle José Gálvez 491</p>
+        <p style = "font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Surco:</strong> Av. Encalada 715</p>
+        <p style = "font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>San Isidro:</strong> Av. Emilio Cavenecia 114</p>
+        <p style="font-weight: bold; font-size: 18px ;"> Horarios : </p>
+        <p> Domingo a miércoles de 7 a.m. - 10 p.m </p>
+        <p> Jueves a Sábado de 7 a.m. a 11 p.m</p>
+        <small style=" font-style: italic;">*Atendemos los 365 días del año. El horario en feriados es de 8 a.m a 10 p.m</small>
+      </div>
+
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62413.85665569979!2d-77.0346811!3d-12.1213169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8225e6cddef%3A0x4f4b63c5e947c3b6!2zTGEgTW9yYSBQYXN0ZWxlcsOtYSAmIENhZsOp!5e0!3m2!1ses-419!2spe!4v1749837016911!5m2!1ses-419!2spe" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="frase">
+    <p>"Cada pastel tiene una historia."</p>
+    <a href="regalos.html" class="frase-btn">Sigue descubriendo</a>
+</section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img src="image/la-mora-1.jpg" alt="Logo" class="logo" />
+      </div>
+      <div id ="contacto">
+        <h4>Contáctanos</h4>
+        <p>Teléfono: 016419323</p>
+        <p>Whatsapp: +51 914 687 276</p>
+      </div>
+      <div>
+        <h4>Productos</h4>
+       <a href="productos.html?categoria=dulce">Dulces</a>
+       <a href="productos.html?categoria=salado">Salados</a>
+       <a href="productos.html?categoria=panes">Panes</a>
+       <a href="productos.html?categoria=carta">Carta</a>
+       <a href="productos.html?categoria=regalo">Regalos</a>
+      </div>
+      <div class="social">
+        <img src="image/facebook.webp" alt="" width="30px">
+        <img src="image/ig.png" alt="" width="30px">
+        <img src="image/tiktok.png" alt="" width="30px">
+        <img src="image/youtube.png" alt="" width="30px">
+        
+      </div>
+    </div>
+    <div class="comment">
+    <p>© 2025, PVS INVERSIONES SAC. 20491980860</p>
+    </div>
+  </footer>
+  <script src="js/carrito.js"></script>
+</body>
+</html>

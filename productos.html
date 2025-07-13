@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="css/productos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <div class="container header-content">
+      <img src="image/la-mora-1.jpg" alt="Logo La Mora" class="logo" />
+      <nav class="nav">
+        <div class ="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="https://delivery.lamorapasteleria.com/">Delivery</a>
+        <a href="regalos.html">Regalos</a>
+        <a href="index.html#sucursales">Sucursales</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html"><id="carrito-link" class="position-relative"> <i class="fas fa-shopping-cart"></i>
+        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        0
+        </span></a>
+        </div>
+        <form class="busqueda-form" action="buscar.html" method="get">
+       <input type="text" placeholder="Buscar productos..." name="q" class="busqueda-input">
+       <button type="submit"><i class="fas fa-search"></i></button>
+       </form>
+      </nav> 
+    </div>
+  </header>
+
+  <section class="position-relative text-center text-white">
+  <div id="novedadesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="image/slider1.jpeg" class="d-block w-100" alt="Oferta 1">
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider2.jpeg" class="d-block w-100" alt="Oferta 2">
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider3.jpeg" class="d-block w-100" alt="Oferta 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#novedadesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#novedadesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-4 rounded">
+    <h1 class="display-4">NOVEDADES QUE TE SORPRENDERÁN</h1>
+    <a href="#productos" class="btn btn-light mt-3">Ver más</a>
+  </div>
+</section>
+  <section class="filtro">
+    <div class="filtro-linea">
+    <h3>Filtro:</h3>
+    <div class="tags">
+      <button data-filter="todos">Todos</button>
+      <button data-filter="masvendidos">Más vendidos</button>
+      <button data-filter="precio">Precio</button>
+      <button data-filter="panes">Panes</button>
+      <button data-filter="dulce">Dulce</button>
+      <button data-filter="salado">Salado</button>
+      <button data-filter="regalo">Regalos</button>
+      <button data-filter="carta">Carta</button>
+    </div>
+  </div>
+  </section>
+
+  <section class="productos">
+
+  <div class="slider-container">
+    <div class="products">
+      <div class="producto-slider precio"> <img src="image/croissant.jpg" alt="Nombre del producto" />
+       <p>Mini Croissant de mantequilla</p>
+       <p class ="mini">S/ 11.00 </p>
+       <button class="agregar-carrito salado"
+         data-nombre="Mini Croissant de mantequilla"
+         data-precio="11.00"
+         data-imagen="image/croissant.jpg">Haz tu pedido</button>
+      </div> 
+      <div class="producto-slider carta"> <img src="image/keke de limon.webp" alt="Nombre del producto" /> 
+      <p>Keke de limon</p>
+      <p class ="mini">S/ 26.00 </p>
+      <button class="agregar-carrito"
+         data-nombre="Keke de limon"
+         data-precio="26.00"
+         data-imagen="image/keke de limon.webp">Haz tu pedido</button> 
+      </div>
+      <div class="producto-slider masvendidos"> <img src="image/MiniBLT.webp" alt="Nombre del producto" /> 
+      <p>Mini BLT</p> 
+      <p class="mini">S/ 32.00 </p> 
+      <button class="agregar-carrito"
+         data-nombre="Mini BLT"
+         data-precio="32.00"
+         data-imagen="image/MiniBLT.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider precio"> <img src="image/alfajores.webp" alt="Nombre del producto" />
+      <p>Alfajores</p> 
+      <p class ="mini">S/ 24.00 </p>
+      <button class="agregar-carrito"
+         data-nombre="Alfajores"
+         data-precio="24.00"
+         data-imagen="image/alfajores.webp">Haz tu pedido</button> 
+      </div>
+      <div class="producto-slider salado"> <img src="image/mini cesar salad wrap.webp" alt="Nombre del producto" /> 
+      <p>Mini cesar salad wrap</p> 
+      <p class ="mini">S/ 57.00</p> 
+      <button class="agregar-carrito"
+         data-nombre="Mini cesar salad wrap"
+         data-precio="57.00"
+         data-imagen="image/mini cesar salad wrap.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider regalo"> <img src="image/14_aeab7c3c-99e6-4a7a-af6e-e404e5643ca6_480x.webp" alt="Nombre del producto" /> 
+      <p>Torta de chocolate</p>
+      <p class ="mini">S/ 32.00 </p> 
+      <button class="agregar-carrito"
+         data-nombre="Torta de chocolate"
+         data-precio="32.00"
+         data-imagen="image/14_aeab7c3c-99e6-4a7a-af6e-e404e5643ca6_480x.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider dulce"> <img src="image/brownie.webp" alt="Nombre del producto" />
+      <p>Brownie</p> 
+      <p class ="mini">S/ 9.00 </p>  
+      <button class="agregar-carrito"
+         data-nombre="Brownie"
+         data-precio="9.00"
+         data-imagen="image/brownie.webp">Haz tu pedido</button> 
+      </div>
+      <div class="producto-slider panes"> <img src="image/croissant.jpg" alt="Nombre del producto" />
+       <p>Mini Croissant de mantequilla</p>
+       <p class ="mini">S/ 11.00 </p>
+       <button class="agregar-carrito"
+         data-nombre="Mini croissant de mantequilla"
+         data-precio="11.00"
+         data-imagen="image/croissant.jpg">Agregar al carrito
+       </button>
+      </div> 
+      <div class="producto-slider dulce"> <img src="image/keke de limon.webp" alt="Nombre del producto" /> 
+      <p>Keke de limon</p>
+      <p class ="mini">S/ 26.00 </p>
+      <button class="agregar-carrito" 
+         data-nombre="Keke de limon"
+         data-precio="26.00"
+         data-imagen="image/keke de limon.webp" >Haz tu pedido</button> 
+      </div> 
+      <div class="producto-slider regalo"> <img src="image/MiniBLT.webp" alt="Nombre del producto" /> 
+      <p>Mini BLT</p> 
+      <p class="mini">S/ 32.00 </p> 
+      <button class="agregar-carrito" 
+         data-nombre="Mini BLT"
+         data-precio="32.00"
+         data-imagen="image/MiniBLT.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider carta"> <img src="image/alfajores.webp" alt="Nombre del producto" />
+      <p>Alfajores</p> 
+      <p class ="mini">S/ 24.00 </p>
+      <button class="agregar-carrito" 
+         data-nombre="Alfajores"
+         data-precio="24.00"
+         data-imagen="image/alfajores.webp">Haz tu pedido</button> 
+      </div>
+      <div class="producto-slider masvendidos"> <img src="image/mini cesar salad wrap.webp" alt="Nombre del producto" /> 
+      <p>Mini cesar salad wrap</p> 
+      <p class ="mini">S/ 57.00</p> 
+      <button class="agregar-carrito" 
+         data-nombre="Mini cesar salad wrap"
+         data-precio="57.00"
+         data-imagen="image/mini cesar salad wrap.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider dulce"> <img src="image/14_aeab7c3c-99e6-4a7a-af6e-e404e5643ca6_480x.webp" alt="Nombre del producto" /> 
+      <p>Torta de chocolate</p>
+      <p class ="mini">S/ 32.00 </p> 
+      <button class="agregar-carrito" 
+         data-nombre="Torta de chocolate"
+         data-precio="32.00"
+         data-imagen="image/14_aeab7c3c-99e6-4a7a-af6e-e404e5643ca6_480x.webp">Haz tu pedido</button>
+      </div>
+      <div class="producto-slider carta"> <img src="image/brownie.webp" alt="Nombre del producto" />
+      <p>Brownie</p> 
+      <p class ="mini">S/ 9.00 </p>  
+      <button class="agregar-carrito" 
+         data-nombre="Brownie"
+         data-precio="9.00"
+         data-imagen="image/brownie.webp">Haz tu pedido</button> 
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+  <section class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="mb-4">
+      <h2 class="fw-bold mb-4">FAVORITOS DE NUESTROS CLIENTES</h2>
+      <p class="text-muted mb-4">
+        Selección de sabores únicos, texturas irresistibles y detalles que hacen la diferencia.
+      </p>
+    </div>
+
+    <div class="row g-4 ">
+      <div class="col-12 col-sm-6 col-lg-3 ">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="image/torta1comunion.webp" class="card-img-top" alt="Torta Primera Comunión">
+          <div class="card-body">
+            <strong class="d-block">Torta Primera Comunión</strong>
+            <small class="text-muted">"Elegante, suave y perfecta para una ocasión especial."</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="image/manzanadeinvierno_480x.webp" class="card-img-top" alt="Manzana de Invierno">
+          <div class="card-body">
+            <strong class="d-block">Manzana de Invierno</strong>
+            <small class="text-muted">"Sabor cálido y especiado que enamora en cada bocado."</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="image/espejodeverano_480x.webp" class="card-img-top" alt="Espejo de Verano">
+          <div class="card-body">
+            <strong class="d-block">Espejo de Verano</strong>
+            <small class="text-muted">"Refrescante, frutal y con un toque delicado de dulzura."</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="image/38_6059271a-afde-43e1-aba3-6e5c28507d99_480x.jpg" class="card-img-top" alt="Capuccino & Trüffel">
+          <div class="card-body">
+            <strong class="d-block">Capuccino & Trüffel</strong>
+            <small class="text-muted">"Ideal para los amantes del café y el chocolate."</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img src="image/la-mora-1.jpg" alt="Logo" class="logo" />
+      </div>
+      <div id ="contacto">
+        <h4>Contáctanos</h4>
+        <p>Teléfono: 016419323</p>
+        <p>Whatsapp: +51 914 687 276</p>
+      </div>
+      <div>
+        <h4>Productos</h4>
+        <a href="productos.html?categoria=dulce">Dulces</a>
+        <a href="productos.html?categoria=salado">Salados</a>
+        <a href="productos.html?categoria=panes">Panes</a>
+        <a href="productos.html?categoria=carta">Carta</a>
+        <a href="productos.html?categoria=regalo">Regalos</a>
+      </div>
+      <div class="social">
+        <img src="image/facebook.webp" alt="" width="30px">
+        <img src="image/ig.png" alt="" width="30px">
+        <img src="image/tiktok.png" alt="" width="30px">
+        <img src="image/youtube.png" alt="" width="30px">
+        
+      </div>
+    </div>
+    <div class="comment">
+    <p>© 2025, PVS INVERSIONES SAC. 20491980860</p>
+    </div>
+  </footer>
+  <script>
+  const filtroBotones = document.querySelectorAll('.tags button');
+  const productos = document.querySelectorAll('.producto-slider');
+
+  filtroBotones.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const filtro = boton.getAttribute('data-filter');
+
+      productos.forEach(producto => {
+        
+        if (filtro === 'todos') {
+          producto.style.display = 'block';
+        } else {
+          
+          if (producto.classList.contains(filtro)) {
+            producto.style.display = 'block';
+          } else {
+            producto.style.display = 'none';
+          }
+        }
+      });
+
+   
+      filtroBotones.forEach(b => b.classList.remove('activo'));
+      boton.classList.add('activo');
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/carrito.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoria = urlParams.get('categoria');
+
+    if (categoria) {
+      const boton = document.querySelector(`.tags button[data-filter="${categoria}"]`);
+      if (boton) {
+        boton.click(); 
+      }
+    }
+  });
+  </script>
+</body>
+</html>

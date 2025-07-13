@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resultados de búsqueda</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #fff8f0;
+    }
+    h1 {
+      color: #6b3e26;
+    }
+    .producto {
+      background: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Resultados para: <span id="query"></span></h1>
+  <div id="resultados"></div>
+
+  <script>
+  
+       const productos = [
+    {
+      id: 1,
+      nombre: 'Pan dulce artesanal',
+      precio: 30,
+      imagen: 'image/pandulce.jpg',
+      descripcion: 'Delicioso pan dulce hecho a mano.'
+    },
+    {
+      id: 2,
+      nombre: 'Galletas',
+      precio: 25,
+      imagen: 'image/chocochip1_480x.webp',
+      descripcion: 'Galletas saludables y crujientes.'
+    },
+    {
+      id: 3,
+      nombre: 'Torta de chocolate',
+      precio: 50,
+      imagen: 'image/torta.jpg',
+      descripcion: 'Torta rica y esponjosa de chocolate.'
+    },
+    {
+      id: 4,
+      nombre: 'Brownies',
+      precio: 11,
+      imagen: 'image/brownies.jpg',
+      descripcion: 'Bizcocho tradicional para el café.'
+    },
+    {
+      id: 5,
+      nombre: 'Empanadas',
+      precio: 32,
+      imagen: 'image/empanada.jpg',
+      descripcion: 'Mermelada artesanal de frutas naturales.'
+    }
+  ];
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q')?.toLowerCase() || '';
+
+  document.getElementById('query').textContent = query || 'Nada';
+
+  const resultados = productos.filter(p => p.nombre.toLowerCase().includes(query));
+
+  const contenedor = document.getElementById('resultados');
+  contenedor.innerHTML = '';
+
+  if (resultados.length === 0) {
+    contenedor.textContent = 'No se encontraron productos.';
+  } else {
+    resultados.forEach(producto => {
+      const div = document.createElement('div');
+      div.className = 'producto';
+      div.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}" style="width:150px; height:auto; border-radius:8px;">
+        <h3>${producto.nombre}</h3>
+        <p>${producto.descripcion}</p>
+        <p><strong>Precio:</strong> $${producto.precio}</p>
+      `;
+      contenedor.appendChild(div);
+    });
+  }
+  </script>
+</body>
+</html>
